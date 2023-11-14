@@ -75,7 +75,7 @@
     
 上图展示了 Broadcom Stingray 解决方案。它包含一个 PS1100R SmartNIC、一个 PCIe 载板、几个 NVMe SSD 和一个独立电源。载板可容纳 SmartNIC 和 NVMe 驱动器以及连接各组件的板载 PCIe 交换机。SmartNIC 拥有 8 × 3.0GHz ARM A72 CPU、8GB DDR4-2400 DRAM（以及 16MB 缓存）、FlexSPARX 加速引擎、100Gb NetXtreme 以太网网卡和 PCIe Gen3 根复杂控制器。PCIe 交换机提供 ×16 PCIe 3.0 通道（理论峰值带宽为 15.75GB/s），可支持 2 × 8 或 4 × 4 PCIe 分叉。带有四个三星 DCT983 960GB 固态硬盘的 Stingra 分解存储盒的上市价格为 3228.0 美元，散装价格可能会低得多，因此比基于 Xeon 且具有类似 IO 配置的存储盒便宜得多。
 
-## NV-BSP
+## **NV-BSP**
 
 ![image](https://github.com/lus-oa/Storage-Pool/assets/122666739/f7dc7a0a-6d3e-444b-aabe-50afaecca350)
 
