@@ -75,6 +75,16 @@
     
 上图展示了 Broadcom Stingray 解决方案。它包含一个 PS1100R SmartNIC、一个 PCIe 载板、几个 NVMe SSD 和一个独立电源。载板可容纳 SmartNIC 和 NVMe 驱动器以及连接各组件的板载 PCIe 交换机。SmartNIC 拥有 8 × 3.0GHz ARM A72 CPU、8GB DDR4-2400 DRAM（以及 16MB 缓存）、FlexSPARX 加速引擎、100Gb NetXtreme 以太网网卡和 PCIe Gen3 根复杂控制器。PCIe 交换机提供 ×16 PCIe 3.0 通道（理论峰值带宽为 15.75GB/s），可支持 2 × 8 或 4 × 4 PCIe 分叉。带有四个三星 DCT983 960GB 固态硬盘的 Stingra 分解存储盒的上市价格为 3228.0 美元，散装价格可能会低得多，因此比基于 Xeon 且具有类似 IO 配置的存储盒便宜得多。
 
+## NV-BSP
+
+![image](https://github.com/lus-oa/Storage-Pool/assets/122666739/f7dc7a0a-6d3e-444b-aabe-50afaecca350)
+
+支持HPC和大数据处理的分域共享并发存储架构如图１所示，从数据访问特性上看，主要包含基于 NVMeoF的虚拟本地存储层、基于NVMeoF存储池的子域共享加速层、大容量全局共享存储层3部分。设计多态存储服务结点，软件上实现高并发NVM存储池NV-BSP(Burst Storage Pool)、Burst I/O缓冲加速功能和并行存储功能，可根据系统规模或者应用的I/O特性在多态存储服务结点上进行动态配置，实现可适配多种应用模式、混合存储资源的柔性配置，以及数据的动态部署。
+
+存储服务结点实现NV-BSP存储池，同时连接高速互连网和后端存储局域网，通过后端存储局域网挂接大容量存储池。本文采用层次式融合存储管理技术维护所有NV-BSP存储池的存储空间，采用一种基于非确定DHT(Distributed Hush Table)映射规则的数据布局与组织方法，实现了高效的 数 据布局和I/O调 度，提供弹性可扩展的数据和元数据访问能力。采用多模式的数据技术，对2个层次之间的数据存储及一致性进行有效管理，构造高效、可靠、统一的融合虚拟存储空间，有效提高 E级系统复杂应用条件下整体I/O性能。
+
+
+
 
 
 
