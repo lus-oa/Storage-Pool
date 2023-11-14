@@ -85,7 +85,7 @@
 
 ![image](https://github.com/lus-oa/Storage-Pool/assets/122666739/c41a6b0f-9bcb-45dd-bd25-e2dfd6e6090e)
 
-BSP存储池硬件逻辑结构如图所示，主要由RDMA网络接口部件(RNIC)、存储缓存Buffer、NVMeoF硬件加速引擎、CPU、内存、PCIe网络和NVMe SSD构成。
+BSP存储池硬件逻辑结构如上图所示，主要由RDMA网络接口部件(RNIC)、存储缓存Buffer、NVMeoF硬件加速引擎、CPU、内存、PCIe网络和NVMe SSD构成。
 
 这种存储互连融合架构支持多个 HOST（I/O访问发起者）和多个NV-BSP存储池的 高 效互连互通，在保证低延迟、高带宽等性能指标的前提下，为 存 储 系 统 提 供 良 好的扩展性。
 
@@ -93,7 +93,7 @@ ION(I/O Node)服务结点和计算结点均可作为Host，通过网络接口部
 
 ![image](https://github.com/lus-oa/Storage-Pool/assets/122666739/cfcb0683-128b-4f64-8cdf-3982ad8dfdd6)
 
-存储池管理软件总体架构如图所示，主要包括I/O处理模块和存储资源管理模块两大部分，实现对NVMe SSD设备的一体化存储管理和监控。
+存储池管理软件总体架构如上图所示，主要包括I/O处理模块和存储资源管理模块两大部分，实现对NVMe SSD设备的一体化存储管理和监控。
 
 I/O处理模块包括数据读写请求处理、控制命令处理、数据重建处理、错误处理等功能，存储资源管理模块主要包括存储池管理、资源分配、数据保护策略、虚拟盘管理等功能。
 
